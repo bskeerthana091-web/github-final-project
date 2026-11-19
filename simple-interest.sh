@@ -9,10 +9,8 @@ read -p "Enter Principal Amount: " principal
 read -p "Enter Rate of Interest: " rate
 read -p "Enter Time Period (in years): " time
 
-# Calculate Simple Interest
 interest=$(awk "BEGIN {printf \"%.2f\", ($principal * $rate * $time) / 100}")
 
-# Calculate Total Amount
 total=$(awk "BEGIN {printf \"%.2f\", $principal + $interest}")
 
 echo "-----------------------------"
